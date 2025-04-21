@@ -1,15 +1,21 @@
-package OOD
-public class Teacher{
-    String name, gender;
-    int phone;
+package paramiterised_method;
 
-    void setInformation(String n, String g, int ph){
+public class Teacher {
+    String name, gender;
+    long phone; // Changed from int to long
+
+    // Method to set teacher information
+    void setInformation(String n, String g, long ph) { // Parameter also changed to long
         name = n;
-        gender =g;
+        gender = g;
         phone = ph;
     }
-}
 
-void displayInformation(){
-    System.out.println("Name: "+name);
+    // Method to display teacher information
+    void displayInformation() {
+        System.out.println("Name: " + name);
+        System.out.println("Gender: " + gender);
+        System.out.println("Phone: " + phone);
+        System.out.println("\n");
+    }
 }
